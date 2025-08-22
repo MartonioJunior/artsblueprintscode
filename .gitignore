@@ -1,8 +1,10 @@
 .DS_Store
 /.build
+/.publish
 /Packages
 xcuserdata/
 DerivedData/
-.swiftpm/configuration/registries.json
-.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+Output/
+.swiftpm/
 .netrc
+ArtsBlueprintsCode/

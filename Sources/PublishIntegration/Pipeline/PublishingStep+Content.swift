@@ -12,7 +12,8 @@ public extension PublishingStep where Site == ArtsBlueprintsCodeWebsite {
     static func processContent() -> Self {
         group([
             .addMarkdownFiles(at: "ArtsBlueprintsCode"),
-            .removeDrafts()
+            .removeDrafts(),
+            .logPages()
         ])
     }
 
@@ -22,5 +23,13 @@ public extension PublishingStep where Site == ArtsBlueprintsCodeWebsite {
                 !$0.metadata.isPublic
             })
         })
+    }
+
+    static func logPages() -> Self {
+        .step(named: "Log of Website Pages") { context in
+            context.pages.forEach { item in
+                print("\(item.key): \(item.value)")
+            }
+        }
     }
 }

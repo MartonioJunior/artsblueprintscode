@@ -20,7 +20,7 @@ public extension PublishingStep where Site == ArtsBlueprintsCodeWebsite {
     static func removeDrafts() -> Self {
         group(Site.SectionID.allCases.map {
             .removeAllItems(in: $0, matching: .init {
-                !$0.metadata.isPublic
+                !$0.metadata.isPublic || $0.body.isEmpty
             })
         })
     }

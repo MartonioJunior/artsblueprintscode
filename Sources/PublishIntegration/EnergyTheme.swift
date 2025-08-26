@@ -88,7 +88,9 @@ extension Energy.HTMLFactory: Publish.HTMLFactory {
 
     // MARK: Page
     public func makePageHTML(for page: Publish.Page, context: Publish.PublishingContext<Site>) throws -> Plot.HTML {
-        HTML(
+        guard !page.isTemplate else { throw PublishingError.blockPublish(of: page) }
+
+        return HTML(
             .lang(context.site.language),
             .head(for: page, on: context.site, stylesheetPaths: styleSheetPaths),
             .body {

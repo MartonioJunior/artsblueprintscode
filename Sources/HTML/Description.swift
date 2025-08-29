@@ -8,7 +8,7 @@
 import CSS
 import Plot
 
-public struct Summary {
+public struct Description {
     // MARK: Variables
     var text: String
 
@@ -19,13 +19,13 @@ public struct Summary {
 }
 
 // MARK: Self: Component
-extension Summary: Component {
+extension Description: Component {
     public var body: Component {
-        Div(text).apply(.summary)
+        Paragraph(text).apply(.description)
     }
 }
 
 // MARK: CSSClass (EX)
 extension CSSClass {
-    static var summary: Self { "summary" }
+    static var description: Self { "description" }
 }

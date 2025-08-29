@@ -27,7 +27,7 @@ extension PostRow: Component {
             if !post.tags.isEmpty {
                 TagsListView(post.tags)
             }
-            Summary(post.summary)
+            Description(post.summary)
         }
     }
 }

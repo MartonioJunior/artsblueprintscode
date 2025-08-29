@@ -26,7 +26,7 @@ extension PostDetailsView: Component {
         Div {
             Article {
                 H1(post.title)
-                Summary(post.summary)
+                Description(post.summary)
                 Div(post.content).apply(.content)
                 if !post.tags.isEmpty {
                     Span("Tagged with: ")

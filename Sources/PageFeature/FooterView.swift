@@ -5,7 +5,7 @@
 //  Created by Martônio Júnior on 24/06/25.
 //
 
-import Plot
+import HTML
 
 public struct FooterView {
     // MARK: Initializers

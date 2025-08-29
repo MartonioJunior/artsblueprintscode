@@ -5,7 +5,7 @@
 //  Created by Martônio Júnior on 20/08/2025.
 //
 
-import Plot
+import HTML
 
 public struct WebsiteAreaRow {
     // MARK: Variables

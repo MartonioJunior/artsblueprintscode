@@ -7,7 +7,7 @@
 
 import AreasFeature
 import CSS
-import Plot
+import HTML
 
 public struct HeaderView {
     // MARK: Variables

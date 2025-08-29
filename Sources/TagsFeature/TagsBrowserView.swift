@@ -6,7 +6,7 @@
 //
 
 import CSS
-import Plot
+import HTML
 
 // TODO: Transform Tag Browsing into it's own module
 public struct TagsBrowserView {

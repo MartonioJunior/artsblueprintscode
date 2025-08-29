@@ -6,7 +6,7 @@
 //
 
 import CSS
-import Plot
+import HTML
 import TagsFeature
 
 public struct TagPostsListView {

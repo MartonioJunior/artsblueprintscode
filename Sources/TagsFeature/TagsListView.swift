@@ -6,7 +6,7 @@
 //
 
 import CSS
-import Plot
+import HTML
 
 public struct TagsListView {
     var tags: [Tag]

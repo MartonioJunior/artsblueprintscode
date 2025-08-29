@@ -6,7 +6,6 @@
 //
 
 import HTML
-import Plot
 import TagsFeature
 
 public struct PostRow {

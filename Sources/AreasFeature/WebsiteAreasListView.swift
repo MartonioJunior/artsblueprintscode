@@ -6,7 +6,7 @@
 //
 
 import CSS
-import Plot
+import HTML
 
 public struct WebsiteAreasListView {
     // MARK: Variables

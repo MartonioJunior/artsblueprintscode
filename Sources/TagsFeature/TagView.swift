@@ -5,7 +5,7 @@
 //  Created by Martônio Júnior on 19/08/2025.
 //
 
-import Plot
+import HTML
 
 public struct TagView {
     // MARK: Variables

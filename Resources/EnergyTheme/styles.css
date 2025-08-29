@@ -69,7 +69,9 @@ a {
 MARK: <article>
 */
 article {
-    & .summary {
+    & .description {
+        font-size: var(--tag-text-size);
+        margin-top: 8px;
         text-align: center;
     }
 }
@@ -288,7 +290,7 @@ ol, ul {
         h1 {
             margin-bottom: 8px;
             font-size: 1.5em;
-            text-align: justify;
+            text-align: left;
         }
         
         p {
@@ -310,7 +312,7 @@ ol, ul {
                 margin-bottom: 0;
             }
         
-            & .summary {
+            & .description {
                 font-size: var(--reading-text-size);
             }
         }
@@ -318,6 +320,16 @@ ol, ul {
 
     &.tag {
         margin-bottom: 10px;
+    }
+}
+/*
+MARK: <time>
+*/
+time {
+    font-family: var(--monospace-font);
+
+    &:before {
+        content: "📅 ";
     }
 }
 /*
@@ -337,16 +349,6 @@ MARK: .content
     }
 }
 /*
-MARK: .date
-*/
-.date {
-    font-family: var(--monospace-font);
-
-    &:before {
-        content: "📅 ";
-    }
-}
-/*
 MARK: .description
 */
 .description {
@@ -359,13 +361,6 @@ MARK: .post
 */
 .post {
     font-family: var(--secondary-font);
-}
-/*
-MARK: .summary
-*/
-.summary {
-    margin-top: 8px;
-    font-style: italic;
 }
 /*
 MARK: .tag

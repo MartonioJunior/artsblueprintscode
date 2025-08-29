@@ -10,8 +10,10 @@ import Plot
 import TagsFeature
 
 public struct Post {
+    public typealias Content = Component
+
     // MARK: Variables
-    var content: Component
+    var content: Content
     var date: Date
     var summary: String
     var title: String
@@ -25,7 +27,7 @@ public struct Post {
         date: Date,
         url: URL,
         tags: [Tag],
-        content: Component
+        content: Content
     ) {
         self.content = content
         self.date = date

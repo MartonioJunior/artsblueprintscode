@@ -24,7 +24,7 @@ extension PostRow: Component {
     public var body: Component {
         Article {
             H1(Link(post.title, url: post.url))
-            DateView(post.date)
+            Time(post.date)
             if !post.tags.isEmpty {
                 TagsListView(post.tags)
             }
